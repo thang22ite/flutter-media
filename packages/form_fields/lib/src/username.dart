@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart' show EquatableMixin;
-import 'package:flutter/foundation.dart' show immutable;
+// import 'package:flutter/foundation.dart' show immutable;
 import 'package:form_fields/src/formz_validation_mixin.dart';
 import 'package:formz/formz.dart' show FormzInput;
 
@@ -7,7 +7,7 @@ import 'package:formz/formz.dart' show FormzInput;
 /// Form input for a name. It extends [FormzInput] and uses
 /// [UsernameValidationError] for its validation errors.
 /// {@endtemplate}
-@immutable
+// @immutable
 class Username extends FormzInput<String, UsernameValidationError>
     with EquatableMixin, FormzValidationMixin {
   /// {@macro name.pure}

@@ -1,12 +1,12 @@
 import 'package:equatable/equatable.dart' show EquatableMixin;
-import 'package:flutter/foundation.dart' show immutable;
+// import 'package:flutter/foundation.dart' show immutable;
 import 'package:form_fields/src/formz_validation_mixin.dart';
 import 'package:formz/formz.dart';
 
 /// {@template email}
 /// Formz input for email. It can be empty or invalid.
 /// {@endtemplate}
-@immutable
+// @immutable
 class Email extends FormzInput<String, EmailValidationError>
     with EquatableMixin, FormzValidationMixin {
   /// {@macro email.pure}
