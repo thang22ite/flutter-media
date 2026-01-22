@@ -1,19 +1,3 @@
-/*
- * ----------------------------------------------------------------------------
- *
- * This file is part of the metal_bonus_backend project, available at:
- * https://github.com/Gambley1/metal_bonus_backend/
- *
- * Created by: Emil Zulufov
- * ----------------------------------------------------------------------------
- *
- * Copyright (c) 2020 Emil Zulufov
- *
- * Licensed under the MIT License.
- *
- * ----------------------------------------------------------------------------
-*/
-
 import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 

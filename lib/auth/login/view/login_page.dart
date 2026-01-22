@@ -44,7 +44,9 @@ class LoginView extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  //login form 
                   const LoginForm(),
+                  // forgotbutton
                   const Padding(
                     padding: EdgeInsets.only(
                       bottom: AppSpacing.md,
@@ -55,6 +57,7 @@ class LoginView extends StatelessWidget {
                       child: ForgotPasswordButton(),
                     ),
                   ),
+                  // Divider
                   const Align(child: SignInButton()),
                   Row(
                     children: <Widget>[
@@ -77,6 +80,7 @@ class LoginView extends StatelessWidget {
                       ),
                     ],
                   ),
+                  // sign in with google, git
                   Align(
                     child: AuthProviderSignInButton(
                       provider: AuthProvider.google,

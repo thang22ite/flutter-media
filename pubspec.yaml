@@ -8,6 +8,7 @@ environment:
   flutter: ^3.35.0
 
 dependencies:
+  animations: ^2.1.1
   api_repository:
     path: packages/api_repository
   app_ui:
@@ -23,6 +24,8 @@ dependencies:
   flutter_gen: any
   flutter_localizations:
     sdk: flutter
+  form_fields:
+    path: packages/form_fields
   get_it: ^9.2.0
   google_sign_in: ^6.3.0
   intl: ^0.20.2
@@ -30,15 +33,12 @@ dependencies:
     path: packages/powersync_repository
   shared:
     path: packages/shared
-  form_fields:
-    path: packages/form_fields
   supabase_authentication_client:
     path: packages/authentication_client/supabase_authentication_client
-  user_repository:
-    path: packages/user_repository
   token_storage:
     path: packages/authentication_client/token_storage
-  animations: ^2.1.1
+  user_repository:
+    path: packages/user_repository
 dev_dependencies:
   bloc_test: ^10.0.0
   flutter_test:

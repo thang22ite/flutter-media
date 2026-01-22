@@ -1,9 +1,10 @@
 import 'package:animations/animations.dart';
+import 'package:app_ui/app_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_social_media/auth/cubit/auth_cubit.dart';
 import 'package:flutter_social_media/auth/login/login.dart';
-import 'package:flutter_social_media/auth/sign_up/sign_up.dart';
+
 
 /// {@template auth_page}
 /// Auth page. Shows login or signup page depending on the state of `AuthCubit`.
@@ -42,7 +43,12 @@ class AuthView extends StatelessWidget {
           child: child,
         );
       },
-      child: showLogin ? const LoginPage() : const SignUpPage(),
+      child: showLogin ? const LoginPage() : Scaffold(
+        body: Tappable(
+          onTap: () => context.read<AuthCubit>().changeAuth(showLogin: true),
+          child: Text("show login"),
+        ),
+      ),
     );
   }
 }
